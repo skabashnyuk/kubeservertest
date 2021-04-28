@@ -15,7 +15,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <org.testng.version>7.0.0</org.testng.version>
-    <io.fabric8.kubernetes-client>4.9.0</io.fabric8.kubernetes-client>
+    <io.fabric8.kubernetes-client>4.13.3</io.fabric8.kubernetes-client>
     <ch.qos.logback.version>1.2.1</ch.qos.logback.version>
     <org.slf4j.version>1.7.24</org.slf4j.version>
   </properties>
