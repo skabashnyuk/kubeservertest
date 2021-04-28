@@ -32,6 +32,7 @@ public class AppTest {
   public void tearDown() {
 
     serverMock.after();
+
   }
 
   @Test
