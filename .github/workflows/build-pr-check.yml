@@ -26,8 +26,9 @@ jobs:
        restore-keys: |
         ${{ runner.os }}-maven-      
     - name: Set up JDK 11
-      uses: actions/setup-java@v1
+      uses: actions/setup-java@v2
       with:
-        java-version: 11
+        distribution: 'adopt'
+        java-version: '11'
     - name: Build with Maven
-      run: mvn -B clean install -Dhttps.protocols=TLSv1.2 -Djdk.tls.client.protocols=TLSv1.2 -Dcom.ibm.jsse2.overrideDefaultTLS=true
+      run: mvn -B clean install
