@@ -15,9 +15,10 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <org.testng.version>7.0.0</org.testng.version>
-    <io.fabric8.kubernetes-client>5.3.1</io.fabric8.kubernetes-client>
+    <io.fabric8.kubernetes-client>4.9.0</io.fabric8.kubernetes-client>
     <ch.qos.logback.version>1.2.1</ch.qos.logback.version>
     <org.slf4j.version>1.7.24</org.slf4j.version>
+    <com.squareup.okhttp3.version>3.12.13</com.squareup.okhttp3.version>
   </properties>
 
   <dependencies>
@@ -30,6 +31,24 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>${org.testng.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp</artifactId>
+      <version>${com.squareup.okhttp3.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>logging-interceptor</artifactId>
+      <version>${com.squareup.okhttp3.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>mockwebserver</artifactId>
+      <version>${com.squareup.okhttp3.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
